@@ -1,0 +1,14 @@
+.not-found{
+    flex-direction: column;   
+    color: #636B72;
+    font-size: 1.5rem;
+
+    &__img{
+        width: 250px;
+    }
+    &__text{
+        width: 400px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+}
