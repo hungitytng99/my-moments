@@ -1,0 +1,66 @@
+.login-icon{
+    padding: 2px 0px 0px 7px;
+    font-size: 1.25rem;
+
+}
+/* Login divider */
+.login__divider {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #999;
+    margin: 15px 0px;
+    font-size: 1.3rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &:before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: rgba(153, 153, 153, 0.5);
+        width: 40%;
+        left: 0;
+        top: 10px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: rgba(153, 153, 153, 0.5);
+        width: 40%;
+        right: 0;
+        top: 10px;
+    }
+}
+.other__login{
+    display: flex;
+    justify-content: space-evenly;
+
+    &-text{
+        width: 100%;
+        text-align:center;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    &-btn{
+        width: 100px;
+        height: 25px;
+        font-size: 1.3rem;
+        border-radius: 3px;
+
+        &.--fb{
+            color: white;
+            background-color: #526caa;
+        }
+    }
+    &-icon{
+        padding-right: 6px;
+    }
+}
+
+.form__btn-submit{
+    margin-top: 20px;
+}
