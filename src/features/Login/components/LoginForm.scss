@@ -50,11 +50,20 @@
         height: 25px;
         font-size: 1.3rem;
         border-radius: 3px;
-
+        transition: background-color .15s ease-in-out ;
         &.--fb{
             color: white;
             background-color: #526caa;
+            &:hover{
+                background-color: #3055ac;
+            }
         }
+        &.--gg{
+            &:hover{
+                background-color: rgb(184, 184, 184);
+            }
+        }
+       
     }
     &-icon{
         padding-right: 6px;
