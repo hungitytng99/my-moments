@@ -29,7 +29,6 @@ function InputField(props) {
   const { name } = field;
   // const { errors, touched } = form;
   // const showError = errors[name] && touched[name];
-  console.log(field);
   return (
     <FormGroup>
       <div className="field">

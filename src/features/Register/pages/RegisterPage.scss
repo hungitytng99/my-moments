@@ -6,6 +6,10 @@ $primary-2: rgba(68,49,141,0.2);
     align-items: center;
     flex-direction: column;
     animation: moveup linear 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
     &-text{
         font-size: 40px;
         color: $primary;
@@ -29,11 +33,11 @@ $primary-2: rgba(68,49,141,0.2);
 }
 @keyframes moveup{
     from{
-        transform: translateY(6px);
+        transform: translateY(-59%) translateX(-49%);
         opacity: 0;
     }
     to{
-        transform: translateY(0);
+        transform: translateY(-60%) translateX(-50%);
         opacity: 1;
     }
 }

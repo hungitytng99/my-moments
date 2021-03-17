@@ -5,8 +5,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import "normalize.css"
 import './index.scss';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
