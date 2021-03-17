@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import "./DirectionBox.scss"
+import PropTypes from 'prop-types';
+
+DirectionBox.protoTypes = {
+    text: PropTypes.string,
+    link: PropTypes.string,
+    to: PropTypes.string,
+}
 DirectionBox.defaultProps = {
     text: "",
     link: "",
-    to: ""
+    to: "",
 }
+
 function DirectionBox(props){
     const { text,link,to } = props;
     return (

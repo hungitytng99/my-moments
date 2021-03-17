@@ -4,6 +4,7 @@ import InputField from "custom-field/InputField/InputField";
 import { FastField, Form, Formik } from "formik";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import './LoginForm.scss'
+import PropTypes from 'prop-types';
 
 const override = css`
     margin: auto;
@@ -11,6 +12,13 @@ const override = css`
         background-color: white;
     }
 `;
+
+LoginForm.propTypes = {
+    initialValues : PropTypes.object,
+}
+LoginForm.defaultProps = {
+    initialValues : {},
+}
 
 function LoginForm(props) {
     const { initialValues } = props;

@@ -5,7 +5,7 @@ $primary-2: rgba(68,49,141,0.2);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    animation: moveup linear 0.5s;
     &-text{
         font-size: 40px;
         color: $primary;
@@ -25,5 +25,15 @@ $primary-2: rgba(68,49,141,0.2);
             padding: 20px 20px;
         }
 
+    }
+}
+@keyframes moveup{
+    from{
+        transform: translateY(6px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }

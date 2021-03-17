@@ -4,6 +4,9 @@ import InputField from "custom-field/InputField/InputField";
 import { FastField, Form, Formik } from "formik";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import './RegisterForm.scss'
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 const override = css`
     margin: auto;
@@ -11,6 +14,13 @@ const override = css`
         background-color: white;
     }
 `;
+RegisterForm.ProtoTypes = {
+    initialValues : PropTypes.object,
+}
+RegisterForm.defaultProps = {
+    initialValues : "",
+}
+
 
 function RegisterForm(props) {
     const { initialValues } = props;
@@ -62,8 +72,10 @@ function RegisterForm(props) {
                                     {isSubmitting ? submitLoading : submitText}
                                 </Button>
                             </div>
-
                         </Form>
+                        <div className="policy_register">
+                            By signing up, you agree to our <Link to="#">Terms</Link>, <Link to="#">Data Policy</Link>  and <Link to="#">Cookies Policy</Link>.
+                        </div>
                     </>
                 )
             }}

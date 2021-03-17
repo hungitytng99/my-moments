@@ -10,14 +10,14 @@ function LoginPage() {
     }
     return (
         <>
-            <div className="auth__page">
-                <div className="auth__page-text">Login</div>
-                <div className="auth__page-box">
+            <div className="login__page">
+                <div className="login__page-text">Login</div>
+                <div className="login__page-box">
                     <LoginForm
                         initialValues={initialValues}
                     />
                 </div>
-                <div className="auth__page-box --box-below">
+                <div className="login__page-box --box-below">
                     <DirectionBox text="Don't have account? " link="Sign up" to="/register"/>
                 </div> 
 

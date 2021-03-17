@@ -2,10 +2,16 @@ import DirectionBox from "custom-field/DirectionBox/DirectionBox";
 import RegisterForm from "../components/RegisterForm";
 import "./RegisterPage.scss"
 
+RegisterPage.defaultProps = {
+}
+
 function RegisterPage() {
     const initialValues = {
+        email_phone: "",
+        fullname: "",
         username: "",
-        password: ""
+        password: "",
+        
     }
     return (
         <>

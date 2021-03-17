@@ -1,9 +1,14 @@
+$grey-color-6: #666;
+$grey-color-3: #333;
 .register_text{
     width: 100%;
     text-align: center;
     padding-bottom: 40px;
     font-size: 1.55rem;
+    font-weight: 500;
     position: relative;
+    color: $grey-color-6;
+
     & span{
         padding-right: 5px;
     }
@@ -22,4 +27,18 @@
 }
 .form__btn-submit{
     margin-top: 25px;
+}
+
+.policy_register{
+    font-size: 1.25rem;
+    color: $grey-color-6;
+    margin-top: 15px;
+    text-align: center;
+    & a {
+        font-weight: 500;
+        color: $grey-color-6;
+        &:hover{
+            color: $grey-color-3;
+        }
+    }
 }
