@@ -9,7 +9,7 @@ RegisterPage.defaultProps = {
 
 function RegisterPage() {
     const initialValues = {
-        email_phone: "",
+        email: "",
         fullname: "",
         username: "",
         password: "",

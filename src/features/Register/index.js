@@ -8,7 +8,6 @@ Register.propTypes = {};
 function Register(props) {
     const match = useRouteMatch();
     const url = match.url;
-    console.log(url);
     return(
         <Switch>
             <Route path={url} component={RegisterPage}/>

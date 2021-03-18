@@ -8,7 +8,7 @@ $primary-2: rgba(68,49,141,0.2);
     }
 
     &-input{
-        margin-top: 5px;
+        margin-top: 3px;
         outline: none;
         border: 1px solid $primary-2;
         border-radius: 5px;
@@ -27,4 +27,9 @@ $primary-2: rgba(68,49,141,0.2);
 
     }
 
+}
+.validate-message{
+    color: #8C2B13;
+    font-size: 1.35rem;
+    padding-top: 2px;
 }

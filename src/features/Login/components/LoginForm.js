@@ -5,6 +5,7 @@ import { FastField, Form, Formik } from "formik";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import './LoginForm.scss'
 import PropTypes from 'prop-types';
+import * as Yup from 'yup';
 
 const override = css`
     margin: auto;
@@ -22,15 +23,20 @@ LoginForm.defaultProps = {
 
 function LoginForm(props) {
     const { initialValues } = props;
-
+    const validateionSchema = Yup.object().shape({
+        username: Yup.string().required('Please enter your username or email.'),
+        password: Yup.string().required("Please enter the password."),
+    });
     return (
         <Formik
             initialValues={initialValues}
+            onSubmit = {props.onSubmit}
+            validationSchema={validateionSchema}
         >
             {formikProps => {
-                const { values, errors, touch, isSubmitting } = formikProps;
+                const { isSubmitting } = formikProps;
                 const disabled = isSubmitting ? { disabled: true } : { disabled: false };
-                const submitLoading = <ScaleLoader height="15" css={override} />
+                const submitLoading = <ScaleLoader css={override} />
                 const submitText = (
                     <div>
                         <span>Login</span>

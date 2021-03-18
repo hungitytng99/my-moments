@@ -6,6 +6,8 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 import './RegisterForm.scss'
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import * as Yup from 'yup';
+
 
 
 const override = css`
@@ -24,13 +26,21 @@ RegisterForm.defaultProps = {
 
 function RegisterForm(props) {
     const { initialValues } = props;
+    const validateionSchema = Yup.object().shape({
+        email: Yup.string().email('Please enter a valid email address').required('Please enter your email.'),
+        fullname: Yup.string().required("Please enter your fullname."),
+        username: Yup.string().required("Please enter your username."),
+        password: Yup.string().required("Please enter your password.").min(8,"Your password must contain at least 8 characters.")
+    });
 
     return (
         <Formik
             initialValues={initialValues}
+            validationSchema={validateionSchema}
+            onSubmit = {props.onSubmit}
         >
             {formikProps => {
-                const { values, errors, touch, isSubmitting } = formikProps;
+                const { isSubmitting } = formikProps;
                 const disabled = isSubmitting ? { disabled: true } : { disabled: false };
                 const submitLoading = <ScaleLoader height="15" css={override} />
                 const submitText = (
@@ -47,9 +57,9 @@ function RegisterForm(props) {
                         </div>
                         <Form>
                             <FastField
-                                name="email_phone"
+                                name="email"
                                 component={InputField}
-                                placeholder="Mobile number or email"
+                                placeholder="Email address"
                             />
                             <FastField
                                 name="fullname"
