@@ -13,7 +13,7 @@ function RegisterPage() {
         fullname: "",
         username: "",
         password: "",
-        
+
     }
     return (
         <>
@@ -25,10 +25,12 @@ function RegisterPage() {
                     />
                 </div>
                 <div className="register__page-box --box-below">
-                    <DirectionBox text="Have account? " link="Sign in" to="/login"/>
-                </div> 
+                    <DirectionBox text="Have account? " link="Sign in" to="/login" />
+                </div>
             </div>
-            <Footer category={FooterCategory.FOOTER_CATEGORY_LIST_1}/>
+            <div className="register__footer">
+                <Footer category={FooterCategory.FOOTER_CATEGORY_LIST_1} />
+            </div>
         </>
     )
 }

@@ -6,6 +6,8 @@ import React, { Suspense } from 'react';
 //Lazy loading:
 const LoginPage = React.lazy(() => import('./features/Login'));
 const RegisterPage = React.lazy(() => import('./features/Register'));
+const HomePage = React.lazy(() => import('./features/Home'));
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
           <Switch>
+            <Route exact path="/" component={HomePage}/>
             <Route exact path="/login" component={LoginPage}/>
             <Route exact path="/register" component={RegisterPage}/>
             <Route component={NotFound} />

@@ -28,8 +28,14 @@ $primary-2: rgba(68,49,141,0.2);
             margin-top: 15px;
             padding: 20px 20px;
         }
-
     }
+}
+.register__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 @keyframes moveup{
     from{

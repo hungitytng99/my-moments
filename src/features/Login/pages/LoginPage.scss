@@ -31,7 +31,13 @@ $primary-2: rgba(68,49,141,0.2);
 
     }
 }
-
+.login__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @keyframes moveup{
     from{
         transform: translateY(-59%) translateX(-49%);
