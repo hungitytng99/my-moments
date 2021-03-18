@@ -7,7 +7,7 @@ import "./Loading.scss"
 const override = css`
   margin: auto;
   & span{
-    border-color: red;
+    border-color: var(--primary);
   }
 `;
 
