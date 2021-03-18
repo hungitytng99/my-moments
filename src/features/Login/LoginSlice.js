@@ -7,7 +7,7 @@ const LoginSlice = createSlice({
         addUser(state, action) {
             //to do UpdateState
             console.log("save user to stored.", action.payload);
-            // state.push(action.payload);
+            state.push(action.payload);
         }
     }
 });

@@ -36,7 +36,7 @@ function LoginForm(props) {
             {formikProps => {
                 const { isSubmitting } = formikProps;
                 const disabled = isSubmitting ? { disabled: true } : { disabled: false };
-                const submitLoading = <ScaleLoader css={override} />
+                const submitLoading = <ScaleLoader height="15" css={override} />
                 const submitText = (
                     <div>
                         <span>Login</span>

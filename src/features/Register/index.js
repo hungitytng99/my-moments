@@ -5,7 +5,7 @@ import RegisterPage from './pages/RegisterPage';
 
 Register.propTypes = {};
 
-function Register(props) {
+function Register() {
     const match = useRouteMatch();
     const url = match.url;
     return(
@@ -15,5 +15,4 @@ function Register(props) {
         </Switch>
     )
 }
-
 export default Register;

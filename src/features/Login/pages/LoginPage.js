@@ -1,7 +1,7 @@
+import UserApi from "api/UserApi";
 import Footer from "components/Footer/Footer";
 import FooterCategory from "constants/FooterCategory";
 import DirectionBox from "custom-field/DirectionBox/DirectionBox";
-import { useDispatch } from "react-redux";
 import LoginForm from "../components/LoginForm";
 import { addUser } from "../LoginSlice";
 import "./LoginPage.scss"
@@ -11,10 +11,15 @@ function LoginPage() {
         username: "",
         password: ""
     }
-    const dispatch = useDispatch();
-    const handleSubmit = (values) => {
-        const action = addUser(values);
-        dispatch(action);
+    const handleSubmit = async (values) => {
+        // call API to auth user 
+        try{
+            const apiResponse = await UserApi.login(values);
+            console.log(apiResponse);
+        } catch(error){
+            console.log("ERROR GET API.");
+        }
+        
     }
     return (
         <>
