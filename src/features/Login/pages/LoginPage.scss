@@ -1,5 +1,3 @@
-$primary: #44318D;
-$primary-2: rgba(68,49,141,0.2);
 .login__page{
     display: flex;
     align-items: center;
@@ -12,18 +10,19 @@ $primary-2: rgba(68,49,141,0.2);
 
     &-text{
         font-size: 40px;
-        color: $primary;
+        color: var(--primary);
         text-transform: uppercase;
         font-family: 'Syne Mono', monospace;
         letter-spacing: 8px;
         padding-bottom: 15px;
+        color: var(--primary);
     }
     &-box{
         width: 300px;
         padding: 35px 20px;
         border: 1px solid rgba(68,49,141,0.3);
         border-radius: 5px;
-        box-shadow: 0px 0px 5px 2px $primary-2;
+        box-shadow: 0px 0px 5px 2px var(--primary-2);
         &.--box-below{
             margin-top: 15px;
             padding: 20px 20px;

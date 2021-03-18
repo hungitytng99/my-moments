@@ -1,3 +1,4 @@
+import ErrorMessage from 'custom-field/ErrorMessage/ErrorMessage';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FormGroup } from 'reactstrap';
@@ -27,7 +28,6 @@ function InputField(props) {
   } = props;
   const { name } = field;
   const { errors, touched } = form;
-  const showError = errors[name] && touched[name];
   return (
     <FormGroup>
       <div className="field">
@@ -40,9 +40,7 @@ function InputField(props) {
           placeholder={placeholder}
           {...field}
         />
-        <div className="validate-message">
-          {showError ? errors[name] : ""}
-        </div>
+        <ErrorMessage errors={errors} touched={touched} name={name}/>
       </div>
     </FormGroup>
   );
