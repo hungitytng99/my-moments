@@ -21,8 +21,20 @@ html {
 }
 
 /* --- Variable --- */
-$primary: rgba(68,49,141,1);
-$primary-8: rgba(68,49,141,0.8);
+:root{
+  --primary: rgba(68,49,141,1);
+  --primary-2: rgba(68,49,141,0.2);
+  --primary-3: rgba(68,49,141,0.3);
+  --primary-8: rgba(68,49,141,0.8);
+  --grey-3: #333;
+  --grey-6: #666;
+  --grey-7:#777;
+  --grey-9:#777;
+  --red-dark: #8C2B13;
+  --red-light: rgb(196, 44, 44);
+  --blue-light:#526caa;
+  --blue-dark:#3055ac;
+}
 
 
 /* --- Bootstrap ---*/
@@ -34,13 +46,13 @@ $primary-8: rgba(68,49,141,0.8);
   height: 28px;
   
   &.btn-outline-light{
-    background-color: $primary-8;
-    border-color:$primary-8;
+    background-color: var(--primary-8);
+    border-color:var(--primary-8);
     color: white;
     font-size: 1.5rem;
     &:hover:not(:disabled){
-      background-color: $primary;
-      border-color: $primary;
+      background-color: var(--primary);
+      border-color: var(--primary);
     }
   }
 }
@@ -50,6 +62,7 @@ $primary-8: rgba(68,49,141,0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .f-screen-background{

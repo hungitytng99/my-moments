@@ -6,6 +6,7 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 import './LoginForm.scss'
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
+import ErrorMessage from "custom-field/ErrorMessage/ErrorMessage";
 
 const override = css`
     margin: auto;
@@ -15,14 +16,14 @@ const override = css`
 `;
 
 LoginForm.propTypes = {
-    initialValues : PropTypes.object,
+    initialValues: PropTypes.object,
 }
 LoginForm.defaultProps = {
-    initialValues : {},
+    initialValues: {},
 }
 
 function LoginForm(props) {
-    const { initialValues } = props;
+    const { initialValues, onSubmit, errorAuthKey } = props;
     const validateionSchema = Yup.object().shape({
         username: Yup.string().required('Please enter your username or email.'),
         password: Yup.string().required("Please enter the password."),
@@ -30,12 +31,11 @@ function LoginForm(props) {
     return (
         <Formik
             initialValues={initialValues}
-            onSubmit = {props.onSubmit}
+            onSubmit={onSubmit}
             validationSchema={validateionSchema}
         >
             {formikProps => {
-                const { isSubmitting } = formikProps;
-                const disabled = isSubmitting ? { disabled: true } : { disabled: false };
+                const { isSubmitting, errors } = formikProps;
                 const submitLoading = <ScaleLoader height="15" css={override} />
                 const submitText = (
                     <div>
@@ -58,11 +58,13 @@ function LoginForm(props) {
                                 type="password"
                             />
                             <div className="form__btn-submit">
-                                <Button variant="outline-light" type="submit" outline="fasle" {...disabled}>
+                                <Button variant="outline-light" type="submit" outline="fasle" disabled={isSubmitting}>
                                     {isSubmitting ? submitLoading : submitText}
                                 </Button>
                             </div>
-
+                            <div className="flex-center">
+                                <ErrorMessage errors={errors} name={errorAuthKey} hasTouched={false} />
+                            </div>
                         </Form>
                         <div className="login__divider">OR</div>
                         <p className="other__login-text">with your social network</p>
@@ -76,6 +78,7 @@ function LoginForm(props) {
                                 <span>Google</span>
                             </button>
                         </div>
+
 
                     </>
                 )

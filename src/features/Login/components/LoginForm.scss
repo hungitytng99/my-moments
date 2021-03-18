@@ -8,7 +8,7 @@
     display: block;
     text-transform: uppercase;
     font-weight: 600;
-    color: #999;
+    color: var(--grey-9);
     margin: 15px 0px;
     font-size: 1.3rem;
     position: relative;
@@ -53,9 +53,9 @@
         transition: background-color .15s ease-in-out ;
         &.--fb{
             color: white;
-            background-color: #526caa;
+            background-color: var(--blue-light);
             &:hover{
-                background-color: #3055ac;
+                background-color: var(--blue-dark);
             }
         }
         &.--gg{
