@@ -1,12 +1,13 @@
 import Header from 'components/Header/Header';
 import './HomePage.scss'
+import FollowPane from '../components/FollowPane';
 function HomePage() {
     return (
         <div className="app-container">
             <div className="home-header">
                 <Header />
             </div>
-            <div className="container">
+            <div className="my-container">
                 <div className="feeds">
                     <div className="daily-post">
                     </div>
@@ -15,7 +16,8 @@ function HomePage() {
                     </div>
                 </div>
 
-                <div className="follows">
+                <div className="home-follows">
+                    <FollowPane/>
                 </div>
             </div>
 

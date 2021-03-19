@@ -17,7 +17,7 @@ function Header() {
                             <i className="header-control home fas fa-home"></i>
                         </li>
                         <li className="header-control__item">
-                            <i className="fab fa-facebook-messenger"></i>
+                            <i className="far fa-comment-dots"></i>
                         </li>
                         <li className="header-control__item">
                             <i className="far fa-compass"></i>

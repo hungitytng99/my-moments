@@ -1,0 +1,36 @@
+.follow-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34x;
+    margin-bottom: 8px;
+    &__avatar{
+        width: 32px;
+        &-img{
+            border-radius: 50%;
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+    }
+    &__info{
+        flex: 1;
+        font-size: 1.4rem;
+        padding-left: 10px;
+        line-height: 20px;
+        &-username{
+
+            font-weight: 700;
+        }
+        &-description{
+            color: var(--grey-10);
+            font-size: 1.3rem;
+        }
+    }
+    &__btn{
+        background-color: white;
+        font-size: 1.4rem;
+        color: var(--blue-normal);
+    }
+
+}
