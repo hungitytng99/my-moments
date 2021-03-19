@@ -1,4 +1,4 @@
-import ErrorMessage from 'custom-field/ErrorMessage/ErrorMessage';
+import ErrorMessage from 'common-components/ErrorMessage/ErrorMessage';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FormGroup } from 'reactstrap';

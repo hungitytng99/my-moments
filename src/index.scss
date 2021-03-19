@@ -30,6 +30,7 @@ html {
   --grey-6: #666;
   --grey-7:#777;
   --grey-9:#777;
+  --grey-11: #dbdbdb;
   --red-dark: #8C2B13;
   --red-light: rgb(196, 44, 44);
   --blue-light:#526caa;
@@ -80,4 +81,8 @@ button{
 }
 a:hover {
   text-decoration: none;
+}
+ul{
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
