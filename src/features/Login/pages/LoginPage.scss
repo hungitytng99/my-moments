@@ -2,12 +2,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 120px 0;
     animation: moveup linear 0.5s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-60%) translateX(-50%);
-
     &-text{
         font-size: 40px;
         color: var(--primary);
@@ -31,19 +27,13 @@
     }
 }
 .login__footer{
-    position: absolute;
-    width: 100%;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+   margin-top: 50px;
 }
 @keyframes moveup{
     from{
-        transform: translateY(-59%) translateX(-49%);
         opacity: 0;
     }
     to{
-        transform: translateY(-60%) translateX(-50%);
         opacity: 1;
     }
 }
