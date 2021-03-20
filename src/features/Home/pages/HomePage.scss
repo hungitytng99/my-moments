@@ -7,9 +7,12 @@
         z-index: 999;
         background-color: white;
     }
+    &-follows{
+        position: sticky;
+        top: 80px;
+    }
 }
 .content {
-    margin-top: 30px;
     width: 100%;    
     display: flex;
 }
