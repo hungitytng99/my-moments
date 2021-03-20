@@ -26,12 +26,11 @@ function Header() {
                             <i className="far fa-bell"></i>
                         </li>
                         <li className="header-control__item">
-
+                            <i className="far fa-user-circle"></i>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </header>
     )
 }

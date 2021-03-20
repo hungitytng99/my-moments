@@ -5,12 +5,8 @@
     height: 34x;
     margin-bottom: 8px;
     &__avatar{
-        width: 32px;
         &-img{
             border-radius: 50%;
-            display: flex;
-            width: 90%;
-            margin: auto;
         }
     }
     &__info{

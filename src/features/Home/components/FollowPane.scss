@@ -1,9 +1,7 @@
 .follow-pane{
     display: flex;
     flex-direction: column;
-    &__user {
 
-    }
     &__text {
       
         display: flex;
@@ -20,7 +18,7 @@
             font-weight: 500;
         }
     }
-    &__suggestion {
-
+    &__footer{
+        color: var(--grey-11);
     }
 }

@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import FollowCard from './FollowCard';
 
-
 FollowList.propsType = {
     followList: PropTypes.arrayOf(PropTypes.object),
 }
 FollowList.defaultProps = {
     followList: [],
 }
+
 function FollowList(props){
     const { followList } = props;
     return(

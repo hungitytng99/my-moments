@@ -4,7 +4,7 @@ $header-height: 50px;
     height: $header-height;
     &__container{
         width: 100%;
-        max-width: 1000px;
+        max-width: var(--content-width);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,6 +22,9 @@ $header-height: 50px;
             font-size: 2.2rem;
             margin-right: 20px;
             cursor: pointer;
+            &:last-child{
+                margin-right: 0px;
+            }
         }
     }
 }
