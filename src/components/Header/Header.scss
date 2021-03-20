@@ -1,0 +1,30 @@
+$header-height: 50px;
+.header{
+    border-bottom: 1px solid var(--grey-11);
+    height: $header-height;
+    &__container{
+        width: 100%;
+        max-width: var(--content-width);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo__img{
+        width: 130px;
+    }
+    &-control{
+        &__list{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        &__item {
+            font-size: 2.2rem;
+            margin-right: 20px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}

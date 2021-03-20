@@ -1,6 +1,6 @@
 import Footer from "components/Footer/Footer";
 import FooterCategory from "constants/FooterCategory";
-import DirectionBox from "custom-field/DirectionBox/DirectionBox";
+import DirectionBox from "common-components/DirectionBox/DirectionBox";
 import RegisterForm from "../components/RegisterForm";
 import "./RegisterPage.scss"
 

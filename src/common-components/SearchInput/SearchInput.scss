@@ -1,0 +1,54 @@
+$width-box : 230px;
+$height-box: 28px;
+
+.search{
+    position: relative;
+    color: var(--grey-9);
+    width: $width-box;
+    height: $height-box;
+    &__input{
+        width: $width-box;
+        height: $height-box;
+        padding: 2px 25px 2px 25px;
+        font-size: 1.5rem;
+        border: 1px solid var(--grey-11);
+        border-radius: 4px;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width-box;
+        height: $height-box;
+        font-size: 1.5rem;
+        background-color: white;
+        border: 1px solid var(--grey-11);
+        z-index: 2;
+        cursor: text;
+        &-icon{
+            font-size: 1.1rem;
+            padding-right: 3px;
+            padding-top: 0.5px;
+        }
+    }
+    &__icon {
+        position: absolute;
+        font-size: 1.4rem;
+        left: 6px;
+        top: 7px;
+    }
+    
+}
+.close__icon{
+    position: absolute;
+    font-size: 1.4rem;
+    z-index: 2;
+    right: 6px;
+    top: 8px;
+    color: var(--grey-7);
+    cursor: pointer;
+    
+}

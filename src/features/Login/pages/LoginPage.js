@@ -1,7 +1,7 @@
 import UserApi from "api/UserApi";
 import Footer from "components/Footer/Footer";
 import FooterCategory from "constants/FooterCategory";
-import DirectionBox from "custom-field/DirectionBox/DirectionBox";
+import DirectionBox from "common-components/DirectionBox/DirectionBox";
 import { useHistory } from "react-router";
 import LoginForm from "../components/LoginForm";
 import "./LoginPage.scss"

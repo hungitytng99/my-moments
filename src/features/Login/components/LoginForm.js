@@ -1,12 +1,12 @@
 import { Button } from "react-bootstrap";
 import { css } from "@emotion/core";
-import InputField from "custom-field/InputField/InputField";
+import InputField from "common-components/InputField/InputField";
 import { FastField, Form, Formik } from "formik";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import './LoginForm.scss'
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
-import ErrorMessage from "custom-field/ErrorMessage/ErrorMessage";
+import ErrorMessage from "common-components/ErrorMessage/ErrorMessage";
 
 const override = css`
     margin: auto;
