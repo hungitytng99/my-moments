@@ -36,4 +36,60 @@ const MainUser =  {
     description: "Mạnh Hùng"
 
 }
-export { MainUser, FollowApi }
+
+const ListComment= [
+    {
+        user: "hung.it99",
+        avatar: "https://scontent.fhan3-1.fna.fbcdn.net/v/t31.0-1/cp0/c0.4.32.32a/p32x32/15288690_1379732242045186_2393911801305276893_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=JhEX0GpppDsAX_dyuoF&_nc_ht=scontent.fhan3-1.fna&tp=27&oh=8f1d9de72a84f3f230ef41f48ac34e09&oe=607AFA86",
+        linkToUserPage: "#",
+        comment: "This is a beautiful picture",
+        reply: [
+            {
+                user: "tta.99",
+                avatar: "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/139107129_239106797770601_188857348208735697_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=7206a8&_nc_ohc=WeSs5w-x3dYAX-KUvQg&_nc_ht=scontent.fhan4-1.fna&tp=27&oh=6cf2caf8feb8d9670661131747754e81&oe=607BA689",
+                linkToUserPage: "#",
+                comment: "You can say Oh yeahhh",
+                reply: [],
+                liked: 12,
+                isLiked: false,
+                dateCreated: "2w",
+            },
+            {
+                user: "tta.98",
+                avatar: "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/158100061_721606551840292_6661100027541711260_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=8D2g_RBhmoMAX_ci0Kj&_nc_ht=scontent.fhan3-1.fna&tp=27&oh=b43925627dc3448b644113d5aad78009&oe=607B4EA8",
+                linkToUserPage: "#",
+                comment: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
+                reply: [],
+                liked: 12,
+                isLiked: false,
+                dateCreated: "2w",
+            }
+        ],
+        liked: 0,
+        isLiked: false,
+        dateCreated: "12w",
+    },
+    {
+        user: "tta.99",
+        avatar: "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/139107129_239106797770601_188857348208735697_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=7206a8&_nc_ohc=WeSs5w-x3dYAX-KUvQg&_nc_ht=scontent.fhan4-1.fna&tp=27&oh=6cf2caf8feb8d9670661131747754e81&oe=607BA689",
+        linkToUserPage: "#",
+        comment: "Amazing good job",
+        reply: [],
+        liked: 12,
+        isLiked: false,
+        dateCreated: "2w",
+    },
+    {
+        user: "puuu.puuu",
+        avatar: "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/150554774_106593991485086_2018582545759993121_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=1eb0c7&_nc_ohc=JVZV3842GPMAX-qC1_i&_nc_ht=scontent.fhan4-1.fna&tp=27&oh=923041152da689f69564b92ffa43483f&oe=607C46A5",
+        linkToUserPage: "#",
+        comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        reply: [
+            
+        ],
+        liked: 15,
+        isLiked: true,
+        dateCreated: "10w",
+    }
+]
+export { MainUser, FollowApi, ListComment }

@@ -3,6 +3,7 @@ import './HomePage.scss'
 import FollowPane from '../components/FollowPane';
 import { Col, Row } from 'react-bootstrap';
 import DailyPane from '../components/DailyPane';
+import FeedsPost from '../components/FeedsPost';
 function HomePage() {
     return (
         <div className="app-container">
@@ -18,6 +19,7 @@ function HomePage() {
                                     <DailyPane/>
                                 </div>
                                 <div className="home-new-feed">
+                                    <FeedsPost/>
                                 </div>
                             </div>
                         </Col>
