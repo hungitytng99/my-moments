@@ -1,10 +1,9 @@
+
 import './DailyPane.scss'
 
-function DailyPane(){
-    return (
-        <div className="daily-pane">
-            
-        </div>
-    )
+function DailyPane() {
+   return (
+       <div></div>
+   )
 }
 export default DailyPane;
