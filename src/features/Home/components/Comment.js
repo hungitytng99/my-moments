@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Comment.scss'
 import CommentsList from './CommentsList';
+import ShowMoreText from 'react-show-more-text';
 Comment.defaultProps = {
     comment: {},
 }
@@ -33,7 +34,17 @@ function Comment(props) {
                 </Link>
                 <div className="comment-box__content">
                     <Link className="comment-box__content-user" to={linkToUserPage}>{user}</Link>
-                    <div className="comment-box__content-comment">{comment}</div>
+                    <ShowMoreText
+                        /* Default options */
+                        lines={2}
+                        more='Show more'
+                        less='Show less'
+                        className='comment-box__content-comment'
+                        expanded={false}
+                    >
+                       {comment}
+                    </ShowMoreText>
+
                 </div>
                 {likeState ? <i className="comment-box__icon-like --liked fas fa-heart" onClick={handleLiked}></i> : <i className="comment-box__icon-like far fa-heart" onClick={handleLiked}></i>}
             </div>
@@ -43,12 +54,12 @@ function Comment(props) {
                 <div className="interactive__item --reply">Reply</div>
             </div>
             <div className="reply">
-                {replyed > 0 ? <div className="reply__view" onClick={handleViewReply}>{isViewReply?"Hide replies":"View replies"} ({replyed})</div> : ""}
+                {replyed > 0 ? <div className="reply__view" onClick={handleViewReply}>{isViewReply ? "Hide replies" : "View replies"} ({replyed})</div> : ""}
                 <div className="reply__comment">
                     {isViewReply ? <CommentsList key={reply.user} listComments={reply} /> : ""}
                 </div>
             </div>
-          
+
         </div>
     )
 }

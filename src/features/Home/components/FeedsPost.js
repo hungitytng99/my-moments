@@ -64,7 +64,7 @@ function FeedsPost(props) {
             <Carousel showThumbs={false} emulateTouch={true}>
                 {img_list.map((item) => {
                     return (
-                        <img className="feeds-post__img" src={item} alt="img"></img>
+                        <img key={item} className="feeds-post__img" src={item} alt="img"></img>
                     )
                 })}
 

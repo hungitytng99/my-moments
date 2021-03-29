@@ -1,6 +1,9 @@
 import ReactModal from 'react-modal';
 import './ControlModal.scss'
 const customStyles = {
+    overlay:{
+        animation: 'appear 0.3s linear',
+    },
     content: {
         top: '50%',
         left: '50%',
@@ -12,6 +15,7 @@ const customStyles = {
         borderRadius: '10px',
         padding: '0px',
         border: '1px solid rgba(219,219,219,1)',
+        animation: 'zoominoutsinglefeatured 0.3s ease-out'
     }
 };
 ReactModal.setAppElement('#root')

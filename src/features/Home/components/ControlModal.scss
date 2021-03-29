@@ -9,7 +9,25 @@
         &.--active {
             font-weight: 500;
             color: red;
+         
         }
     }
 }
 
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1.1,1.1) translate(-50.5%, -50.5%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1) translate(-50%, -50%);
+    }
+}
