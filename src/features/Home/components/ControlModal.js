@@ -18,9 +18,10 @@ const customStyles = {
         animation: 'zoominoutsinglefeatured 0.3s ease-out'
     }
 };
+// openModal, 
 ReactModal.setAppElement('#root')
 function ControlModal(props) {
-    const { modalIsOpen, openModal, closeModal, itemsList } = props;
+    const { modalIsOpen, closeModal, itemsList } = props;
     return (
         <div>
             <ReactModal

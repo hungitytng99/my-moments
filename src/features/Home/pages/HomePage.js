@@ -4,8 +4,6 @@ import FollowPane from '../components/FollowPane';
 import { Col, Row } from 'react-bootstrap';
 import DailyPane from '../components/DailyPane';
 import Feeds from '../components/Feeds';
-import FeedsPost from '../components/FeedsPost';
-import { Post } from 'constants/fake';
 function HomePage() {
     return (
         <div className="app-container">

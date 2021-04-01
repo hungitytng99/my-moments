@@ -1,12 +1,11 @@
 // import axiosClient from "./axiosClient";
 
-import { Post } from 'constants/fake';
-import { FAKE_AUTH_LIST } from './FakeData/auth-data'
+import { Post, SUCCESS_LOGIN_RESPONSE } from 'constants/fake';
 const UserApi =  {
     login : (user) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-              resolve(FAKE_AUTH_LIST);
+              resolve(SUCCESS_LOGIN_RESPONSE);
             }, 250);
           });
     },

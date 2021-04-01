@@ -62,6 +62,7 @@ function FeedsPost(props) {
                 </div>
             </div>
             <Carousel showThumbs={false} emulateTouch={true}>
+                {/* Lay min height of images => add to style to fix image view */}
                 {img_list.map((item) => {
                     return (
                         <img key={item} className="feeds-post__img" src={item} alt="img"></img>

@@ -13,23 +13,24 @@ code {
 }
 
 /* --- Variable --- */
-:root{
-  --primary: rgba(68,49,141,1);
-  --primary-2: rgba(68,49,141,0.2);
-  --primary-3: rgba(68,49,141,0.3);
-  --primary-8: rgba(68,49,141,0.8);
+:root {
+  --primary: rgba(68, 49, 141, 1);
+  --primary-2: rgba(68, 49, 141, 0.2);
+  --primary-3: rgba(68, 49, 141, 0.3);
+  --primary-8: rgba(68, 49, 141, 0.8);
   --grey-3: #333;
   --grey-6: #666;
-  --grey-7:#777;
-  --grey-9:#777;
+  --grey-7: #777;
+  --grey-9: #777;
   --grey-10: #9D9D9D;
   --grey-11: #dbdbdb;
+  --grey-12: #f0f0f0;
   --grey-white: #fafafa;
   --red-dark: #8C2B13;
   --red-light: rgb(196, 44, 44);
-  --blue-light:#526caa;
+  --blue-light: #526caa;
   --blue-normal: #0095F6;
-  --blue-dark:#3055ac;
+  --blue-dark: #3055ac;
   // length
   --content-width: 940px;
 }
@@ -46,19 +47,20 @@ html {
 
 
 /* --- Bootstrap ---*/
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 28px;
-  
-  &.btn-outline-light{
+
+  &.btn-outline-light {
     background-color: var(--primary-8);
-    border-color:var(--primary-8);
+    border-color: var(--primary-8);
     color: white;
     font-size: 1.5rem;
-    &:hover:not(:disabled){
+
+    &:hover:not(:disabled) {
       background-color: var(--primary);
       border-color: var(--primary);
     }
@@ -66,14 +68,14 @@ html {
 }
 
 /* --- My custom --- */
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.f-screen-background{
+.f-screen-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -82,26 +84,40 @@ html {
   background-color: white;
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 // My tag style
-button{
+button {
   border: none;
   padding: 0px;
 }
+
 a {
   color: var(--grey-3);
 }
+
 a:hover {
   text-decoration: none;
   color: var(--grey-3);
 
 }
+
 textarea {
   resize: none;
 }
+
 textarea:focus {
   outline: none;
 }
-ul{
+
+ul {
   list-style: none;
   padding-left: 0px;
   margin-bottom: 0px;

@@ -1,3 +1,9 @@
+// Login
+const SUCCESS_LOGIN_RESPONSE = {
+    "token":"abc",
+    "username":"xyz",
+}
+  
 const FollowApi = [
     {
         avatar: "https://scontent-hkt1-2.xx.fbcdn.net/v/t1.0-0/p480x480/160896752_900171330785043_362186757221381720_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=2vb4XE8OacMAX8usC7h&_nc_ht=scontent-hkt1-2.xx&tp=6&oh=83270ca21590d41276a3e0da7c741cf8&oe=607B786C",
@@ -45,26 +51,7 @@ const ListComment = [
         linkToUserPage: "#",
         comment: "This is a beautiful picture",
         reply: [
-            // {
-            //     user: "tta.99",
-            //     avatar: "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/139107129_239106797770601_188857348208735697_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=7206a8&_nc_ohc=WeSs5w-x3dYAX-KUvQg&_nc_ht=scontent.fhan4-1.fna&tp=27&oh=6cf2caf8feb8d9670661131747754e81&oe=607BA689",
-            //     linkToUserPage: "#",
-            //     comment: "You can say Oh yeahhh",
-            //     reply: [],
-            //     liked: 12,
-            //     isLiked: false,
-            //     dateCreated: "2w",
-            // },
-            // {
-            //     user: "tta.98",
-            //     avatar: "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/158100061_721606551840292_6661100027541711260_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=8D2g_RBhmoMAX_ci0Kj&_nc_ht=scontent.fhan3-1.fna&tp=27&oh=b43925627dc3448b644113d5aad78009&oe=607B4EA8",
-            //     linkToUserPage: "#",
-            //     comment: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
-            //     reply: [],
-            //     liked: 12,
-            //     isLiked: false,
-            //     dateCreated: "2w",
-            // }
+           
         ],
         liked: 0,
         isLiked: false,
@@ -303,4 +290,4 @@ const Post = [
         isFavouriteProps: false,
     },
 ]
-export { MainUser, FollowApi, ListComment, Post }
+export { SUCCESS_LOGIN_RESPONSE, MainUser, FollowApi, ListComment, Post }

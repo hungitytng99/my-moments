@@ -3,6 +3,8 @@ import './App.scss';
 import Loading from 'components/Loading/Loading';
 import NotFound from './components/NotFound/NotFound';
 import React, { Suspense } from 'react';
+import { PublicRoute } from 'PublicRoute';
+import { PrivateRoute } from 'PrivateRoute';
 //Lazy loading:
 const LoginPage = React.lazy(() => import('./features/Login'));
 const RegisterPage = React.lazy(() => import('./features/Register'));
@@ -15,9 +17,9 @@ function App() {
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={HomePage}/>
-            <Route exact path="/login" component={LoginPage}/>
-            <Route exact path="/register" component={RegisterPage}/>
+            <PrivateRoute exact path="/" component={HomePage}/>
+            <PublicRoute exact path="/login" component={LoginPage}/>
+            <PublicRoute exact path="/register" component={RegisterPage}/>
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>

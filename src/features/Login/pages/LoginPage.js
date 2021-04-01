@@ -17,7 +17,7 @@ function LoginPage() {
         // call API to auth user 
         try{
             const apiResponse = await UserApi.login(values);
-            console.log(apiResponse);
+            localStorage.setItem(process.env.REACT_APP_TOKEN_STORAGE,apiResponse.token);
             history.push('/');
         } catch(error){
             const errors = {}

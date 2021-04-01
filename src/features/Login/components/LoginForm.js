@@ -36,7 +36,7 @@ function LoginForm(props) {
         >
             {formikProps => {
                 const { isSubmitting, errors } = formikProps;
-                const submitLoading = <ScaleLoader height="15" css={override} />
+                const submitLoading = <ScaleLoader height="15px" css={override} />
                 const submitText = (
                     <div>
                         <span>Login</span>
