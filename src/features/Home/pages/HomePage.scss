@@ -25,6 +25,15 @@
     // align-items: center;
     margin: auto;
     width: var(--content-width);
+}
 
-
+@media screen and (max-width: 992px) {
+    .home{
+        &-follows{
+            display: none;
+        }
+    }
+    .my-container{
+        width: 700px;
+    }
 }

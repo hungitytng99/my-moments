@@ -13,7 +13,7 @@ function HomePage() {
             <div className="content">
                 <div className="my-container">
                     <Row>
-                        <Col sm={8} lg={8}>
+                        <Col  xl={8} lg={8} md={12} sm={12} xs={12}>
                             <div className="home-feeds">
                                 <div className="home-daily-post">
                                     <DailyPane/>
@@ -23,7 +23,7 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={4} lg={4}>
+                        <Col  xl={4} lg={4} md={0} sm={0} xs={0}>
                             <div className="home-follows">
                                 <FollowPane />
                             </div>

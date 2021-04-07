@@ -8,9 +8,12 @@ const LoginSlice = createSlice({
             //to do UpdateState
             console.log("save user to stored.", action.payload);
             state.push(action.payload);
+        },
+        deleteUser(state){
+            state = {};
         }
     }
 });
 const { reducer,actions } = LoginSlice;
-export const { addUser }  = actions;
+export const { addUser , deleteUser }  = actions;
 export default reducer;

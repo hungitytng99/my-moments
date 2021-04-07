@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 
-
-
 const override = css`
     margin: auto;
     & span{
@@ -22,7 +20,6 @@ RegisterForm.ProtoTypes = {
 RegisterForm.defaultProps = {
     initialValues : "",
 }
-
 
 function RegisterForm(props) {
     const { initialValues } = props;

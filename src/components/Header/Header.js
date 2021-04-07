@@ -3,12 +3,16 @@ import SearchInput from 'common-components/SearchInput/SearchInput'
 import './Header.scss'
 import { useState } from 'react'
 import { Link, Redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 function Header() {
     const [isSelectItem, setIsSelectItem] = useState(1);
     const handleLogout = () => {
         localStorage.removeItem(process.env.REACT_APP_TOKEN_STORAGE);
+        localStorage.removeItem(process.env.REACT_APP_USERNAME_STORAGE);
         <Redirect to="/login"></Redirect>
     }
+    const user = useSelector(state => state.login.find(item => item.username));
+    console.log(user);
     return (
         <header className="header flex-center">
             <div className="header__container">
@@ -45,7 +49,7 @@ function Header() {
                                         <div className="header__dropdown-box">
                                             <ul className="header__dropdown-list noselect" >
                                                 <li className="header__dropdown-item">
-                                                    <Link className="header__dropdown-link" to="#">
+                                                    <Link className="header__dropdown-link" to={user.username}>
                                                         <i className="header__dropdown-item-icon fas fa-user"></i>
                                                         <div className="header__dropdown-item-text">Profile</div>
                                                     </Link>
@@ -70,8 +74,7 @@ function Header() {
                                                 </li>
                                                 <li className="header__dropdown-item">
                                                     <Link to="/login" onClick={handleLogout}>
-                                                    <div className="header__dropdown-item-text --logout" >Log Out</div>
-
+                                                        <div className="header__dropdown-item-text --logout" >Log Out</div>
                                                     </Link>
                                                 </li>
                                             </ul>
