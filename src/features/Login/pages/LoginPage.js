@@ -19,7 +19,7 @@ function LoginPage() {
         try{
             // call API to auth user 
             const apiResponse = await UserApi.login(values);
-            AuthHelper.setUser(apiResponse);
+            AuthHelper.storeUser(apiResponse);
             history.push('/');
         } catch(error){
             // when api is response error
