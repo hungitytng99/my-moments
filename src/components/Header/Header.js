@@ -3,16 +3,14 @@ import SearchInput from 'common-components/SearchInput/SearchInput'
 import './Header.scss'
 import { useState } from 'react'
 import { Link, Redirect } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import AuthHelper from 'helpers/AuthHelper';
 function Header() {
     const [isSelectItem, setIsSelectItem] = useState(1);
+    const username = AuthHelper.getUsername();
     const handleLogout = () => {
-        localStorage.removeItem(process.env.REACT_APP_TOKEN_STORAGE);
-        localStorage.removeItem(process.env.REACT_APP_USERNAME_STORAGE);
+        AuthHelper.rmAuthInfo();
         <Redirect to="/login"></Redirect>
     }
-    const user = useSelector(state => state.login.find(item => item.username));
-    console.log(user);
     return (
         <header className="header flex-center">
             <div className="header__container">
@@ -49,7 +47,7 @@ function Header() {
                                         <div className="header__dropdown-box">
                                             <ul className="header__dropdown-list noselect" >
                                                 <li className="header__dropdown-item">
-                                                    <Link className="header__dropdown-link" to={user.username}>
+                                                    <Link className="header__dropdown-link" to={username}>
                                                         <i className="header__dropdown-item-icon fas fa-user"></i>
                                                         <div className="header__dropdown-item-text">Profile</div>
                                                     </Link>

@@ -1,19 +1,19 @@
 import Notfound from 'components/NotFound/NotFound';
 import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
-import HomePage from './pages/HomePage';
+import ProfilePage from './pages/ProfilePage';
 
-Home.propTypes = {};
+Profile.propTypes = {};
 
-function Home(props) {
+function Profile(props) {
     const match = useRouteMatch();
     const url = match.url;
-    return (
+    return(
         <Switch>
-            <Route path={`${url}`} component={HomePage} />
-            <Route component={Notfound} />
+            <Route path={`${url}`} component={ProfilePage}/>
+            <Route component={Notfound}/>
         </Switch>
     )
 }
 
-export default Home;
+export default Profile;
