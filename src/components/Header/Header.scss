@@ -26,7 +26,11 @@ $header-height: 50px;
         &__item {
             font-size: 2.2rem;
             margin-right: 20px;
-            cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+
+            }
 
             &:last-child {
                 margin-right: 0px;
@@ -36,7 +40,10 @@ $header-height: 50px;
 
     &__dropdown {
         position: relative;
-        &-triangle-up{
+        & label:hover{
+            cursor: pointer;
+        }
+        &-triangle-up {
             position: absolute;
             z-index: 1;
             right: 4px;
@@ -48,9 +55,10 @@ $header-height: 50px;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
             z-index: 1;
-          
+
         }
-        &-hidden{
+
+        &-hidden {
             content: '';
             position: absolute;
             top: 114%;
@@ -60,6 +68,7 @@ $header-height: 50px;
             background-color: white;
             z-index: 3;
         }
+
         &-box {
             position: absolute;
             top: 115%;
@@ -70,32 +79,38 @@ $header-height: 50px;
             z-index: 2;
             overflow: hidden;
         }
-        &-list{
+
+        &-list {
             background-color: white;
             width: 220px;
         }
+
         &-item {
             &-icon {
                 padding: 0px 6px 2px 0px;
             }
+
             &:last-child {
                 border-top: 1px solid var(--grey-11);
             }
+
             &:hover {
                 background-color: var(--grey-12);
             }
-            &-text.--logout{
+
+            &-text.--logout {
                 padding: 8px 0px 8px 10px;
                 text-align: left;
             }
         }
-        &-link{
+
+        &-link {
             display: flex;
             align-items: center;
             padding: 10px;
         }
     }
 }
-.custom-icon-home{
+.custom-icon-home {
     margin: 2px 0px 0px 7px;
 }

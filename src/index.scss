@@ -78,7 +78,7 @@ html {
 
 .f-screen-background {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -92,6 +92,9 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.no-focus-outline:focus{
+  outline: none;
 }
 
 .my-container{

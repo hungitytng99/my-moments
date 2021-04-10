@@ -23,6 +23,8 @@ function App() {
             <PublicRoute exact path="/login" component={LoginPage}/>
             <PublicRoute exact path="/register" component={RegisterPage}/>
             <PrivateRoute exact path="/inbox" component={InboxPage}/>
+            <PrivateRoute exact path="/explore" component={NotFound}/>
+            <PrivateRoute exact path="/favourite" component={NotFound}/>
             <PrivateRoute exact path="/:user" component={ProfilePage}/>
             <Route component={NotFound} />
           </Switch>
