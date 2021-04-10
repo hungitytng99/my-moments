@@ -5,6 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 import DailyPane from '../components/DailyPane';
 import Feeds from '../components/Feeds';
 function HomePage() {
+    sessionStorage.setItem("nav-selection",1);
     return (
         <div className="app-container">
             <div className="home-header">

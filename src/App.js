@@ -10,6 +10,8 @@ const LoginPage = React.lazy(() => import('./features/Login'));
 const RegisterPage = React.lazy(() => import('./features/Register'));
 const HomePage = React.lazy(() => import('./features/Home'));
 const ProfilePage = React.lazy(() => import('./features/Profile'));
+const InboxPage = React.lazy(() => import('./features/Inbox'));
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             <PrivateRoute exact path="/" component={HomePage}/>
             <PublicRoute exact path="/login" component={LoginPage}/>
             <PublicRoute exact path="/register" component={RegisterPage}/>
+            <PrivateRoute exact path="/inbox" component={InboxPage}/>
             <PrivateRoute exact path="/:user" component={ProfilePage}/>
             <Route component={NotFound} />
           </Switch>

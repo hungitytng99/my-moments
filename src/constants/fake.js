@@ -1,9 +1,9 @@
 // Login
 const SUCCESS_LOGIN_RESPONSE = {
-    token:"abc",
-    username:"xyz",
+    token: "mytoken~!!!!",
+    username: "hung.it99",
 }
-  
+
 const FollowApi = [
     {
         avatar: "https://scontent-hkt1-2.xx.fbcdn.net/v/t1.0-0/p480x480/160896752_900171330785043_362186757221381720_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=2vb4XE8OacMAX8usC7h&_nc_ht=scontent-hkt1-2.xx&tp=6&oh=83270ca21590d41276a3e0da7c741cf8&oe=607B786C",
@@ -51,7 +51,7 @@ const ListComment = [
         linkToUserPage: "#",
         comment: "This is a beautiful picture",
         reply: [
-           
+
         ],
         liked: 0,
         isLiked: false,
@@ -182,7 +182,7 @@ const ListComment = [
 
 const Post = [
     {
-        id:1,
+        id: 1,
         user: "tmh",
         linkToUserPage: "#",
         avatar: "https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-1/cp0/p40x40/119217689_712455266280051_2723821443101656033_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=7206a8&_nc_ohc=h4RFdtD6xfAAX87guA6&_nc_ht=scontent.fhan3-2.fna&tp=27&oh=e7dd552503804585079a11a3799e815d&oe=60860268",
@@ -199,7 +199,7 @@ const Post = [
         isFavouriteProps: false,
     },
     {
-        id:2,
+        id: 2,
         user: "dochet1989",
         linkToUserPage: "#",
         avatar: "https://instagram.fhan3-3.fna.fbcdn.net/v/t51.2885-19/s150x150/160337107_782315219389156_6483106785446804796_n.jpg?tp=1&_nc_ht=instagram.fhan3-3.fna.fbcdn.net&_nc_ohc=pPrb2pG2YKIAX-a8k_3&ccb=7-4&oh=1fc3bbb55f7bc2b5733ab16278f8e383&oe=607F08FC&_nc_sid=4f375e",
@@ -218,7 +218,7 @@ const Post = [
         isFavouriteProps: true,
     },
     {
-        id:3,
+        id: 3,
         user: "ngoctrinh89",
         linkToUserPage: "#",
         avatar: "https://scontent-hkt1-2.xx.fbcdn.net/v/t1.0-1/cp0/p32x32/156918206_1205336003215177_4355043532576681541_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=t2ezrPmIFk8AX8jVTUr&_nc_ht=scontent-hkt1-2.xx&tp=27&oh=befe6ba06a36ed7e31de5d7c29d52f70&oe=6086483D",
@@ -234,7 +234,7 @@ const Post = [
         isFavouriteProps: false,
     },
     {
-        id:4,
+        id: 4,
         user: "tta",
         linkToUserPage: "#",
         avatar: "https://scontent-hkt1-2.xx.fbcdn.net/v/t1.0-1/cp0/p32x32/152400999_280658790092595_3050925047302118211_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=0QbBntEL86IAX_8Oqyn&_nc_ht=scontent-hkt1-2.xx&tp=27&oh=4aeb274ce5bad396d6295c74980ec3a6&oe=6084D969",
@@ -251,7 +251,7 @@ const Post = [
         isFavouriteProps: false,
     },
     {
-        id:5,
+        id: 5,
         user: "lingglanhh",
         linkToUserPage: "#",
         avatar: "https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-1/cp0/p32x32/119217689_712455266280051_2723821443101656033_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=7206a8&_nc_ohc=h4RFdtD6xfAAX87guA6&_nc_ht=scontent.fhan3-2.fna&tp=27&oh=de20da28b303d5617712f0f0da30171d&oe=6087CDF6",
@@ -272,7 +272,7 @@ const Post = [
         isFavouriteProps: false,
     },
     {
-        id:6,
+        id: 6,
         user: "ngocdao",
         linkToUserPage: "#",
         avatar: "https://scontent-hkt1-2.xx.fbcdn.net/v/t1.0-1/cp0/p40x40/151628694_468664057488699_6179845234354271567_o.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=khSQ9KFynBEAX_m_zBO&_nc_ht=scontent-hkt1-2.xx&tp=27&oh=542ed8594092db6cb24124647607e113&oe=6086094A",
@@ -290,4 +290,84 @@ const Post = [
         isFavouriteProps: false,
     },
 ]
-export { SUCCESS_LOGIN_RESPONSE, MainUser, FollowApi, ListComment, Post }
+const PRIVATE_POST = {
+    "Comment": {
+        "352118598881683": {
+            "version": 1,
+            "href": "",
+            "data": {
+                "content":""
+            }
+        }
+    },
+    "Attachment": {
+        "432423423423442": {
+            "version": 1,
+            "href": "",
+            "data": {
+                "userId":"",
+                "url":"",
+                "name":"",
+                "mime":"",
+                "size":122342,
+            }
+        }
+   },
+    "HasSeen": {
+        "140737488419056": {
+            "href": "",
+            "minScore": "1612421634628",
+            "maxScore": "1612421634628",
+            "total": 1,
+            "itemIds": [
+                "70506183519470"
+            ]
+        }
+    },
+    "Post": {
+        "140737488419056": {
+            "version": 1,
+            "href": "",
+            "data": {
+                "caption": "hello",
+                "longitude":"423432432",
+                "latitude": "70506183431280",
+            }
+        }
+    },
+    "HasAttachment": {
+        "70437463720459": {
+            "href": "",
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "432423423423442"
+            ]
+        }
+    },
+    "HasPost": {
+        "70437463720459": {
+            "href": "",
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "140737488419056"
+            ]
+        }
+    },
+    "HasComment": {
+        "140737488419056": {
+            "href": "",
+            "minScore": 1612421622876,
+            "maxScore": 1612422235525,
+            "total": 1,
+            "itemIds": [
+                "352118598881683"
+            ]
+        }
+    },
+    "avatar":"https://instagram.fhan2-3.fna.fbcdn.net/v/t51.2885-19/s150x150/127365855_806397036596310_8906347670844691912_n.jpg?tp=1&_nc_ht=instagram.fhan2-3.fna.fbcdn.net&_nc_ohc=EG5NcKidGDYAX-b5YCS&edm=ABfd0MgAAAAA&ccb=7-4&oh=11cd7e9f9f648d06bfdcc10115321702&oe=60986FFC&_nc_sid=7bff83",
+ }; 
+export { PRIVATE_POST, SUCCESS_LOGIN_RESPONSE, MainUser, FollowApi, ListComment, Post }

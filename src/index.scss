@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-weight: 1.4rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -91,6 +92,11 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.my-container{
+  margin: auto;
+  width: var(--content-width);
 }
 
 // My tag style
