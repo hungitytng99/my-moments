@@ -14,7 +14,7 @@ function RegisterPage() {
     const history = useHistory();
     const initialValues = {
         email: "",
-        fullname: "",
+        fullName: "",
         username: "",
         password: "",
     }

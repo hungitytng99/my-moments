@@ -24,7 +24,7 @@ Loading.defaultProps = {
 function Loading(props){
     return (
         <div className="background-loading f-screen-background">
-          <props.LoadingComponent css={override} size={props.size} />
+          {/* <props.LoadingComponent css={override} size={props.size} /> */}
         </div>
     );
 }

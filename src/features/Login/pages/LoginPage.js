@@ -12,6 +12,7 @@ function LoginPage() {
         username: "",
         password: ""
     }
+    console.log("Login Page");
     const history = useHistory();
     const errorAuthKey = "errorLogin";
     //handle after click SubmitBtn
@@ -24,7 +25,7 @@ function LoginPage() {
         } catch(error){
             // when api is response error
             const errors = {}
-            errors[errorAuthKey] = error;
+            errors[errorAuthKey] = "Your username or password is incorrect. Please double check again.";
             actions.setErrors(errors);
         }
         

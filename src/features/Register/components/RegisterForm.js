@@ -25,7 +25,7 @@ function RegisterForm(props) {
     const { initialValues } = props;
     const validateionSchema = Yup.object().shape({
         email: Yup.string().email('Please enter a valid email address').required('Please enter your email.'),
-        fullname: Yup.string().required("Please enter your fullname."),
+        fullName: Yup.string().required("Please enter your fullname."),
         username: Yup.string().required("Please enter your username."),
         password: Yup.string().required("Please enter your password.").min(8,"Your password must contain at least 8 characters.")
     });
@@ -47,7 +47,6 @@ function RegisterForm(props) {
                 );
                 return (
                     <>
-
                         <div className="register_text">
                             <span>Register to keep your moments</span>
                             <i className="heart-icon fas fa-heart"></i>
@@ -59,7 +58,7 @@ function RegisterForm(props) {
                                 placeholder="Email address"
                             />
                             <FastField
-                                name="fullname"
+                                name="fullName"
                                 component={InputField}
                                 placeholder="Full name"
                             />
