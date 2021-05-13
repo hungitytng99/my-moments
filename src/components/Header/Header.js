@@ -2,7 +2,7 @@ import Images from 'constants/images'
 import SearchInput from 'common-components/SearchInput/SearchInput'
 import './Header.scss'
 import { useState } from 'react'
-import { Link, Redirect, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import AuthHelper from 'helpers/AuthHelper';
 import HeaderNav from 'constants/HeaderNav';
 function Header() {

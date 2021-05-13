@@ -1,133 +1,137 @@
 body {
-  margin: 0;
-  font-weight: 1.4rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-weight: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
 
 /* --- Variable --- */
+
 :root {
-  --primary: rgba(68, 49, 141, 1);
-  --primary-2: rgba(68, 49, 141, 0.2);
-  --primary-3: rgba(68, 49, 141, 0.3);
-  --primary-8: rgba(68, 49, 141, 0.8);
-  --grey-3: #333;
-  --grey-6: #666;
-  --grey-7: #777;
-  --grey-9: #777;
-  --grey-10: #9D9D9D;
-  --grey-11: #dbdbdb;
-  --grey-12: #f0f0f0;
-  --grey-white: #fafafa;
-  --red-dark: #8C2B13;
-  --red-light: rgb(196, 44, 44);
-  --blue-light: #526caa;
-  --blue-normal: #0095F6;
-  --blue-dark: #3055ac;
-  // length
-  --content-width: 940px;
+    --primary: rgba(68, 49, 141, 1);
+    --primary-2: rgba(68, 49, 141, 0.2);
+    --primary-3: rgba(68, 49, 141, 0.3);
+    --primary-8: rgba(68, 49, 141, 0.8);
+    --grey-3: #333;
+    --grey-6: #666;
+    --grey-7: #777;
+    --grey-9: #777;
+    --grey-10: #9D9D9D;
+    --grey-11: #dbdbdb;
+    --grey-12: #f0f0f0;
+    --grey-white: #fafafa;
+    --red-dark: #8C2B13;
+    --red-light: rgb(196, 44, 44);
+    --blue-light: #526caa;
+    --blue-normal: #0095F6;
+    --blue-dark: #3055ac;
+    // length
+    --content-width: 940px;
 }
+
 
 /* My custom styles */
+
 html {
-  font-size: 62.5%;
-  line-height: 1.6rem;
-  box-sizing: border-box;
-  background-color: var(--grey-white);
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    background-color: var(--grey-white);
 }
-
-
 
 
 /* --- Bootstrap ---*/
+
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 28px;
-
-  &.btn-outline-light {
-    background-color: var(--primary-8);
-    border-color: var(--primary-8);
-    color: white;
-    font-size: 1.5rem;
-
-    &:hover:not(:disabled) {
-      background-color: var(--primary);
-      border-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 28px;
+    &.btn-outline-light {
+        background-color: var(--primary-8);
+        border-color: var(--primary-8);
+        color: white;
+        font-size: 1.5rem;
+        &:hover:not(:disabled) {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
     }
-  }
 }
 
+
 /* --- My custom --- */
+
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .f-screen-background {
-  position: fixed;
-  top: 50px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: white;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
 }
 
 .noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.no-focus-outline:focus{
-  outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.my-container{
-  margin: auto;
-  width: var(--content-width);
+.no-focus-outline:focus {
+    outline: none;
+}
+
+.my-container {
+    margin: auto;
+    width: var(--content-width);
 }
 
 // My tag style
 button {
-  border: none;
-  padding: 0px;
+    border: none;
+    padding: 0px;
 }
 
 a {
-  color: var(--grey-3);
+    color: var(--grey-3);
 }
 
 a:hover {
-  text-decoration: none;
-  color: var(--grey-3);
-
+    text-decoration: none;
+    color: var(--grey-3);
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 textarea:focus {
-  outline: none;
+    outline: none;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0px;
-  margin-bottom: 0px;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: 0px;
 }

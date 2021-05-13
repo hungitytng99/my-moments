@@ -1,21 +1,23 @@
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Profile.scss';
+import Cookies from "js-cookie";
 function Profile(props) {
     const { post } = props;
     console.log(post);
+    const username = Cookies.get(process.env.REACT_APP_USERNAME_STORAGE);
     return (
         <div className="profile">
             <Row>
                 <Col lg={4}>
                     <div className="profile__avatar flex-center">
-                        <img src={post.avatar}/>
+                        <img src={post.avatar} alt="Main user avatar"/>
                     </div>
                 </Col>
                 <Col lg={8}>
                     <div className="profile__info">
                         <div className="profile__info-box">
-                            <div className="profile__info-username">user.name</div>
+                            <div className="profile__info-username">{username}</div>
                             <div className="profile__info-edit">
                                 <Link to="#">Edit Profile</Link>
                             </div>

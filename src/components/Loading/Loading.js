@@ -1,15 +1,15 @@
-import { css } from "@emotion/core";
+// import { css } from "@emotion/core";
 import PuffLoader from "react-spinners/PuffLoader";
 import React from "react";
 import PropTypes from 'prop-types';
 import "./Loading.scss"
 
-const override = css`
-  margin: auto;
-  & span{
-    border-color: var(--primary);
-  }
-`;
+// const override = css`
+//   margin: auto;
+//   & span{
+//     border-color: var(--primary);
+//   }
+// `;
 
 Loading.protoTypes = {
   LoadingComponent: PropTypes.func,

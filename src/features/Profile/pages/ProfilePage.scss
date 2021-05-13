@@ -1,0 +1,15 @@
+.my-container__content {
+    padding-top: 30px;
+    font-size: 1.4rem;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 0px 7px;
+    & i {
+        margin-right: 7px;
+    }
+}
+
+.tab-icon {}

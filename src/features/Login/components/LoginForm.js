@@ -23,7 +23,7 @@ LoginForm.defaultProps = {
 }
 
 function LoginForm(props) {
-    const { initialValues, onSubmit, errorAuthKey, errorSession } = props;
+    const { initialValues, onSubmit, errorAuthKey } = props;
    
     const validateionSchema = Yup.object().shape({
         username: Yup.string().required('Please enter your username or email.'),

@@ -8,7 +8,6 @@ import { Route, Redirect, useHistory } from "react-router-dom";
 export default function PrivateRoute(props) {
     const [isAuth, setIsAuth] = React.useState(0);
     const { component: Component, ...rest } = props;
-    const history = useHistory();
     React.useEffect(() => {
         async function validateToken() {
             const accessToken = Cookies.get(process.env.REACT_APP_TOKEN_STORAGE);
@@ -36,5 +35,5 @@ export default function PrivateRoute(props) {
             )} />
         case 2:
             return <Redirect to={{ pathname: '/login', state: { from: props.location }}} />;
-    }
+        }
 }

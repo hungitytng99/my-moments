@@ -61,8 +61,8 @@ const Images = {
     AVA_9 : ava_9,
     AVA_10 : ava_10,
     AVA_11 : ava_11,
-    AVA_11 : ava_12,
-    AVA_11 : ava_13,
+    AVA_12 : ava_12,
+    AVA_13 : ava_13,
     //post
     POST_11: post_11,
     POST_12: post_12,
