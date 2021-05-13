@@ -291,10 +291,10 @@ const Post = [
         avatar: Images.AVA_6,
         location: "Địa Trung Hải-Sun Premier Village Primavera",
         img_list: [
-            Images.POST_51,
-            Images.POST_52,
-            Images.POST_53,
-            Images.POST_54,
+            Images.POST_61,
+            Images.POST_62,
+            Images.POST_63,
+            Images.POST_64,
         ],
         liked: 101111,
         status: "Nhìn kỹ là thiên thần.",
@@ -382,6 +382,6 @@ const PRIVATE_POST = {
             ]
         }
     },
-    "avatar":"https://instagram.fhan2-3.fna.fbcdn.net/v/t51.2885-19/s150x150/127365855_806397036596310_8906347670844691912_n.jpg?tp=1&_nc_ht=instagram.fhan2-3.fna.fbcdn.net&_nc_ohc=EG5NcKidGDYAX-b5YCS&edm=ABfd0MgAAAAA&ccb=7-4&oh=11cd7e9f9f648d06bfdcc10115321702&oe=60986FFC&_nc_sid=7bff83",
+    "avatar": Images.AVA_M1,
  }; 
 export { PRIVATE_POST, SUCCESS_LOGIN_RESPONSE, MainUser, FollowApi, ListComment, Post }

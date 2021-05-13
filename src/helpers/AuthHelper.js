@@ -1,8 +1,8 @@
-import UserApi from "api/UserApi";
 import Cookies from "js-cookie";
 
 function storeUser(apiResponse) {
     console.log("save User to cookie");
+    console.log(apiResponse);
     Cookies.set(process.env.REACT_APP_TOKEN_STORAGE, apiResponse.token, { expires: 90 });
     Cookies.set(process.env.REACT_APP_USERNAME_STORAGE, apiResponse.username, { expires: 90 });
 }
@@ -12,17 +12,6 @@ function getUsername() {
 }
 
 function getAndConfirmToken() {
-    const authToken = Cookies.get(process.env.REACT_APP_TOKEN_STORAGE);
-    if (!authToken) {
-        return false;
-    } else {
-        try {
-            // const response = await UserApi.verify(authToken);
-        } catch (error){
-            console.log(error);
-        }
-    }
-    // const apiResponse = await UserApi.);
     return Cookies.get(process.env.REACT_APP_TOKEN_STORAGE);
 }
 

@@ -2,6 +2,7 @@ import notFound from 'assets/images/not-found.png'
 import purplePaint from 'assets/images/purple-paint.png'
 import logoText from 'assets/images/logo-text.png'
 // fake avatar:
+import ava_m1 from 'assets/images/avatar/m1.jpg';
 import ava_1 from 'assets/images/avatar/1.jpg';
 import ava_2 from 'assets/images/avatar/2.jpg';
 import ava_3 from 'assets/images/avatar/3.jpg';
@@ -48,6 +49,7 @@ const Images = {
     PURPLE_PAINT : purplePaint,
     LOGO_TEXT: logoText,
     // avatar
+    AVA_M1 : ava_m1,
     AVA_1 : ava_1,
     AVA_2 : ava_2,
     AVA_3 : ava_3,

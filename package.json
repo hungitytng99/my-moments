@@ -27,6 +27,7 @@
     "react-scripts": "4.0.3",
     "react-show-more-text": "^1.4.6",
     "react-spinners": "^0.10.6",
+    "react-tabs": "^3.2.2",
     "reactstrap": "^8.9.0",
     "scss": "^0.2.4",
     "web-vitals": "^1.1.1",

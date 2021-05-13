@@ -19,13 +19,22 @@ function App() {
       <Suspense fallback={<Loading />}>
         <BrowserRouter>
           <Switch>
-            <PrivateRoute exact path="/" component={HomePage}/>
+            {/* <PrivateRoute exact path="/" component={HomePage}/>
             <PublicRoute exact path="/login" component={LoginPage}/>
             <PublicRoute exact path="/register" component={RegisterPage}/>
             <PrivateRoute exact path="/inbox" component={InboxPage}/>
             <PrivateRoute exact path="/explore" component={NotFound}/>
             <PrivateRoute exact path="/favourite" component={NotFound}/>
             <PrivateRoute exact path="/:user" component={ProfilePage}/>
+            <Route component={NotFound} /> */}
+
+            <Route exact path="/" component={HomePage}/>
+            <Route exact path="/login" component={LoginPage}/>
+            <Route exact path="/register" component={RegisterPage}/>
+            <Route exact path="/inbox" component={InboxPage}/>
+            <Route exact path="/explore" component={NotFound}/>
+            <Route exact path="/favourite" component={NotFound}/>
+            <Route exact path="/:user" component={ProfilePage}/>
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>

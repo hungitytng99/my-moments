@@ -12,6 +12,7 @@ function Header() {
     let history = useHistory();
     const handleLogout = () => {
         AuthHelper.rmAuthInfo();
+        
         history.push('/login');
     }
     const handleClickNav = (index, redirect) => {

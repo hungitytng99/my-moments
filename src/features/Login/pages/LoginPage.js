@@ -7,28 +7,28 @@ import LoginForm from "../components/LoginForm";
 import "./LoginPage.scss"
 import AuthHelper from "helpers/AuthHelper";
 
-function LoginPage() {
+function LoginPage(props) {
     const initialValues = {
         username: "",
         password: ""
     }
-    console.log("Login Page");
+    const errors = {};
     const history = useHistory();
     const errorAuthKey = "errorLogin";
     //handle after click SubmitBtn
     const handleSubmit = async (values, actions) => {
-        try{
+        try {
             // call API to auth user 
+            console.log(actions);
             const apiResponse = await UserApi.login(values);
             AuthHelper.storeUser(apiResponse);
             history.push('/');
-        } catch(error){
+        } catch (error) {
             // when api is response error
-            const errors = {}
             errors[errorAuthKey] = "Your username or password is incorrect. Please double check again.";
             actions.setErrors(errors);
         }
-        
+
     }
     return (
         <>
@@ -38,15 +38,16 @@ function LoginPage() {
                     <LoginForm
                         initialValues={initialValues}
                         onSubmit={handleSubmit}
+
                         errorAuthKey={errorAuthKey}
                     />
                 </div>
                 <div className="login__page-box --box-below">
-                    <DirectionBox text="Don't have account? " link="Sign up" to="/register"/>
-                </div> 
+                    <DirectionBox text="Don't have account? " link="Sign up" to="/register" />
+                </div>
             </div>
             <div className="login__footer">
-                <Footer category={FooterCategory.FOOTER_CATEGORY_LIST_1}/>
+                <Footer category={FooterCategory.FOOTER_CATEGORY_LIST_1} />
             </div>
         </>
     )

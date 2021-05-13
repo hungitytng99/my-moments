@@ -15,7 +15,6 @@ function ProfilePage(props) {
             <div className="profile-page__profile">
             <div className="my-container">
                     <Profile post={PRIVATE_POST} />
-
                 </div>
             </div>
             {/* <div className="profile-page__footer">
