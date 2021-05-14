@@ -4,7 +4,6 @@ import './Profile.scss';
 import Cookies from "js-cookie";
 function Profile(props) {
     const { post } = props;
-    console.log(post);
     const username = Cookies.get(process.env.REACT_APP_USERNAME_STORAGE);
     return (
         <div className="profile">

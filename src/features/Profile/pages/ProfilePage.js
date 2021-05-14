@@ -9,7 +9,6 @@ import './ProfilePage.scss'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 function ProfilePage(props) {
-    const username = AuthHelper.getUsername();
     return (
         <div className="profile-page">
             <div className="profile-page__header">
@@ -49,7 +48,7 @@ function ProfilePage(props) {
                                 </Tab>
                             </TabList>
                             <TabPanel>
-                                <ListPosts list_post={PRIVATE_POST}></ListPosts>
+                                <ListPosts listPosts={PRIVATE_POST}></ListPosts>
                             </TabPanel>
 
                             <TabPanel>

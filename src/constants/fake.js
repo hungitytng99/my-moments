@@ -308,9 +308,23 @@ const PRIVATE_POST = {
     "Comment": {
         "352118598881683": {
             "version": 1,
-            "href": "",
+            "href": "#",
             "data": {
-                "content":""
+                "content":"Content of comment 1."
+            }
+        },
+        "352118598881684": {
+            "version": 1,
+            "href": "#",
+            "data": {
+                "content":"Content of comment 2."
+            }
+        },
+        "352118598881685": {
+            "version": 1,
+            "href": "#",
+            "data": {
+                "content":"Content of comment 3."
             }
         }
     },
@@ -319,10 +333,10 @@ const PRIVATE_POST = {
             "version": 1,
             "href": "",
             "data": {
-                "userId":"",
-                "url":"",
-                "name":"",
-                "mime":"",
+                "userId":"1",
+                "url": Images.POST_11,
+                "name":"alt-test",
+                "mime":"jpg",
                 "size":122342,
             }
         }
@@ -341,7 +355,7 @@ const PRIVATE_POST = {
     "Post": {
         "140737488419056": {
             "version": 1,
-            "href": "",
+            "href": "/admin/140737488419056",
             "data": {
                 "caption": "hello",
                 "longitude":"423432432",
@@ -378,7 +392,9 @@ const PRIVATE_POST = {
             "maxScore": 1612422235525,
             "total": 1,
             "itemIds": [
-                "352118598881683"
+                "352118598881683",
+                "352118598881684",
+                "352118598881685",
             ]
         }
     },
