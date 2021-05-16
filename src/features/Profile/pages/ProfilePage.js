@@ -8,7 +8,9 @@ import ListPosts from '../components/ListPosts';
 import './ProfilePage.scss'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import ApiHelper from 'helpers/ApiHelper';
 function ProfilePage(props) {
+    const listPosts = ApiHelper.getOwnPostParser(PRIVATE_POST);
     return (
         <div className="profile-page">
             <div className="profile-page__header">
@@ -17,10 +19,10 @@ function ProfilePage(props) {
             <div className="profile-page__profile">
                 <div className="my-container">
                     <div className="my-container__profile">
-                        <Profile post={PRIVATE_POST} />
+                        <Profile listPosts={listPosts} />
                     </div>
                     <div className="my-container__content">
-                        <Tabs >
+                        <Tabs>
                             <TabList>
                                 <Tab>
                                     <div className="tab">

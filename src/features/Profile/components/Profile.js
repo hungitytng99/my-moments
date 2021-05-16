@@ -2,15 +2,16 @@ import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Profile.scss';
 import Cookies from "js-cookie";
+import Images from 'constants/images';
 function Profile(props) {
-    const { post } = props;
+    const { listPosts } = props;
     const username = Cookies.get(process.env.REACT_APP_USERNAME_STORAGE);
     return (
         <div className="profile">
             <Row>
                 <Col lg={4}>
                     <div className="profile__avatar flex-center">
-                        <img src={post.avatar} alt="Main user avatar"/>
+                        <img src={Images.AVA_M1} alt="Main user avatar"/>
                     </div>
                 </Col>
                 <Col lg={8}>
@@ -26,7 +27,7 @@ function Profile(props) {
                         </div>
                         <div className="profile__info-box --mid">
                             <div className="profile__info-detail">
-                                <span>1</span>
+                                <span>{listPosts.total}</span>
                                 <p>post</p>
                             </div>
                             <div className="profile__info-detail">

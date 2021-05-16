@@ -20,7 +20,7 @@ function ListPosts(props) {
                 {
                     listPosts.posts.map((post, index) => {
                         return (
-                            <Col key={index} xs="12" md="6" lg="4">
+                            <Col key={index} xs="4" md="4" lg="4">
                                 <PostCard post={post} key={index} />
                             </Col>)
                     })

@@ -26,7 +26,7 @@ const FollowApi = [
 
     },
     {
-        avatar:Images.AVA_4,
+        avatar: Images.AVA_4,
         username: "hungitytng96",
         description: "Followed by anhplaydan + 1 more"
 
@@ -187,7 +187,7 @@ const Post = [
         id: 1,
         user: "tmh",
         linkToUserPage: "#",
-        avatar:Images.AVA_10,
+        avatar: Images.AVA_10,
         location: "Địa Trung Hải-Sun Premier Village Primavera",
         img_list: [
             Images.POST_11,
@@ -215,7 +215,7 @@ const Post = [
             Images.POST_23,
             Images.POST_24,
             Images.POST_25,
-           
+
         ],
         liked: 70211,
         status: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
@@ -255,7 +255,7 @@ const Post = [
             Images.POST_42,
             Images.POST_43,
             Images.POST_44,
-           
+
         ],
         liked: 22222,
         status: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
@@ -275,7 +275,7 @@ const Post = [
             Images.POST_52,
             Images.POST_53,
             Images.POST_54,
-            
+
         ],
         liked: 99999,
         status: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
@@ -305,99 +305,362 @@ const Post = [
     },
 ]
 const PRIVATE_POST = {
-    "Comment": {
-        "352118598881683": {
-            "version": 1,
-            "href": "#",
-            "data": {
-                "content":"Content of comment 1."
-            }
-        },
-        "352118598881684": {
-            "version": 1,
-            "href": "#",
-            "data": {
-                "content":"Content of comment 2."
-            }
-        },
-        "352118598881685": {
-            "version": 1,
-            "href": "#",
-            "data": {
-                "content":"Content of comment 3."
-            }
-        }
-    },
-    "Attachment": {
-        "432423423423442": {
-            "version": 1,
-            "href": "",
-            "data": {
-                "userId":"1",
-                "url": Images.POST_11,
-                "name":"alt-test",
-                "mime":"jpg",
-                "size":122342,
-            }
-        }
-   },
-    "HasSeen": {
-        "140737488419056": {
-            "href": "",
-            "minScore": "1612421634628",
-            "maxScore": "1612421634628",
-            "total": 1,
+    "HasPost": {
+        "100": {
+            "minScore": 1612422235848,
+            "maxScore": 1712334234234,
+            "total": 6,
             "itemIds": [
-                "70506183519470"
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
             ]
         }
     },
     "Post": {
-        "140737488419056": {
+        "1": {
             "version": 1,
-            "href": "/admin/140737488419056",
+            "href": "http://137.116.132.172:8081/post/1",
             "data": {
-                "caption": "hello",
-                "longitude":"423432432",
-                "latitude": "70506183431280",
+                "caption": "post 1",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
+            }
+        },
+        "2": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/post/2",
+            "data": {
+                "caption": "post 2",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
+            }
+        },
+        "3": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/post/3",
+            "data": {
+                "caption": "post 3",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
+            }
+        },
+        "4": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/post/4",
+            "data": {
+                "caption": "post 4",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
+            }
+        },
+        "5": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/post/5",
+            "data": {
+                "caption": "post 5",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
+            }
+        },
+        "6": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/post/6",
+            "data": {
+                "caption": "post 6",
+                "location": {
+                    "longitude": "321f",
+                    "latitude": "232a"
+                }
             }
         }
     },
     "HasAttachment": {
-        "70437463720459": {
-            "href": "",
+        "1": {
             "minScore": 1612422235848,
             "maxScore": 1612422235848,
             "total": 1,
             "itemIds": [
-                "432423423423442"
+                "21"
+            ]
+        },
+        "2": {
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "22"
+            ]
+        },
+        "3": {
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "23"
+            ]
+        },
+        "4": {
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "24"
+            ]
+        },
+        "5": {
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "25"
+            ]
+        },
+        "6": {
+            "minScore": 1612422235848,
+            "maxScore": 1612422235848,
+            "total": 1,
+            "itemIds": [
+                "26"
             ]
         }
     },
-    "HasPost": {
-        "70437463720459": {
-            "href": "",
-            "minScore": 1612422235848,
-            "maxScore": 1612422235848,
-            "total": 1,
-            "itemIds": [
-                "140737488419056"
-            ]
+    "Attachment": {
+        "21": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/21",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan3-2.fna.fbcdn.net/v/t1.6435-9/182777880_1851930018318985_9158593335791817092_n.jpg?_nc_cat=101&_nc_map=control&ccb=1-3&_nc_sid=b9115d&_nc_ohc=dwISctLZTSoAX89Q1G7&_nc_ht=scontent.fhan3-2.fna&oh=ba3bd862ab91141a751ded4c5669f547&oe=60C5E6D2",
+                "name": "sexy1.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
+        },
+        "22": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/22",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.6435-9/186480885_3610385049066502_8974178780301432035_n.jpg?_nc_cat=108&_nc_map=control&ccb=1-3&_nc_sid=825194&_nc_ohc=PZCso2Fw3tYAX8YPaqQ&_nc_ht=scontent.fhan4-1.fna&oh=bd9a24eeafd37edecee3d80f8e891842&oe=60C5AF12",
+                "name": "sexy2.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
+        },
+        "23": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/23",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/184690308_1636703876522705_1120751707584534709_n.jpg?_nc_cat=102&_nc_map=control&ccb=1-3&_nc_sid=825194&_nc_ohc=LkKarMPYpbUAX_dFutL&_nc_ht=scontent.fhan3-1.fna&oh=02540b3534677ce9c7b67a036625fc94&oe=60C4FE7F",
+                "name": "sexy3.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
+        },
+        "24": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/24",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/185196673_1635029723356787_2116748809590947355_n.jpg?_nc_cat=110&_nc_map=control&ccb=1-3&_nc_sid=b9115d&_nc_ohc=NY0MhUSebhEAX9ckU3q&_nc_ht=scontent.fhan3-1.fna&oh=49b06d200127f4fac5b1cfcabef4fe95&oe=60C5E270",
+                "name": "sexy4.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
+        },
+        "25": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/25",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.6435-9/183337276_1849713325207321_8888494431101349692_n.jpg?_nc_cat=108&_nc_map=control&ccb=1-3&_nc_sid=825194&_nc_ohc=msHWnQgslc4AX8nygA7&_nc_ht=scontent.fhan4-1.fna&oh=e22cbe36c1ee6936d75f68846e940ea5&oe=60C50EE7",
+                "name": "sexy5.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
+        },
+        "26": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/attachment/26",
+            "data": {
+                "userId": "100",
+                "url": "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.6435-9/184643748_2946104265613542_8198938875508360380_n.jpg?_nc_cat=105&_nc_map=control&ccb=1-3&_nc_sid=b9115d&_nc_ohc=R3q-HrpNAooAX-mgua-&_nc_ht=scontent.fhan4-1.fna&oh=4a6b94ff197a764a3cccda5c1e2cbe77&oe=60C5AB26",
+                "name": "sexy6.png",
+                "mime": "image/png",
+                "size": 122342,
+                "width": 1080,
+                "length": 2040
+            }
         }
     },
     "HasComment": {
-        "140737488419056": {
-            "href": "",
+        "1": {
             "minScore": 1612421622876,
-            "maxScore": 1612422235525,
+            "maxScore": 1612421622876,
+            "total": 3,
+            "itemIds": [
+                "31",
+                "37",
+                "38",
+            ]
+        },
+        "2": {
+            "minScore": 1612421622876,
+            "maxScore": 1612421622876,
             "total": 1,
             "itemIds": [
-                "352118598881683",
-                "352118598881684",
-                "352118598881685",
+                "32"
+            ]
+        },
+        "3": {
+            "minScore": 1612421622876,
+            "maxScore": 1612421622876,
+            "total": 1,
+            "itemIds": [
+                "33"
+            ]
+        },
+        "4": {
+            "minScore": 1612421622876,
+            "maxScore": 1612421622876,
+            "total": 1,
+            "itemIds": [
+                "34"
+            ]
+        },
+        "5": {
+            "minScore": 1612421622876,
+            "maxScore": 1612421622876,
+            "total": 1,
+            "itemIds": [
+                "35"
+            ]
+        },
+        "6": {
+            "minScore": 1612421622876,
+            "maxScore": 1612421622876,
+            "total": 1,
+            "itemIds": [
+                "36"
             ]
         }
     },
-    "avatar": Images.AVA_M1,
- }; 
+    "Comment": {
+        "31": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/31",
+            "data": {
+                "content": "comment 1"
+            }
+        },
+        "32": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/32",
+            "data": {
+                "content": "comment 2"
+            }
+        },
+        "33": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/33",
+            "data": {
+                "content": "comment 3"
+            }
+        },
+        "34": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/34",
+            "data": {
+                "content": "comment 4"
+            }
+        },
+        "35": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/35",
+            "data": {
+                "content": "comment 5"
+            }
+        },
+        "36": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/36",
+            "data": {
+                "content": "comment 6"
+            }
+        },
+        "37": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/36",
+            "data": {
+                "content": "comment 37"
+            }
+        },
+        "38": {
+            "version": 1,
+            "href": "http://137.116.132.172:8081/commment/36",
+            "data": {
+                "content": "comment 38"
+            }
+        }
+    },
+    "HasReaction": {
+        "1": {
+            "minScore": "1612421634628",
+            "maxScore": "1612421634644",
+            "total": 2,
+            "itemIds": [
+                "100",
+                "101"
+            ]
+        },
+        "5": {
+            "minScore": "1612421634628",
+            "maxScore": "1612421634628",
+            "total": 4,
+            "itemIds": [
+                "100",
+                "101",
+                "110",
+                "121"
+            ]
+        },
+        "6": {
+            "minScore": "1612421634628",
+            "maxScore": "1612421634628",
+            "total": 1,
+            "itemIds": [
+                "102",
+                "121"
+            ]
+        }
+    }
+}
+
+//     "avatar": Images.AVA_M1,
+//  }; 
 export { PRIVATE_POST, SUCCESS_LOGIN_RESPONSE, MainUser, FollowApi, ListComment, Post }

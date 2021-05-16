@@ -53,55 +53,56 @@ const listApiUri = {
 
 // }
 const getOwnPostParser = (post) => {
-    let result = {};
-    for (const [key, value] of Object.entries(post?.HasPost)) {
-        const listAttachmentIds = post.HasAttachment[key].itemIds;
-        let listImages = [];
-        listAttachmentIds.forEach((attachmentId) => {
-            let attachment = post?.Attachment[attachmentId];
-            let image = {
-                "userId": attachment.data.userId,
-                "url": attachment.data.url,
-                "alt": attachment.data.name,
-                "mime": attachment.data.mime,
-                "width": 480,
-                "height": 600,
-                "size": attachment.data.size,
-                "version": attachment.version,
-            }
-            listImages.push(image);
-        })
+    let result;
+    for (const [key, value] of Object.entries(post.HasPost)) {
+        console.log(post, key, value);
         result = {
             "total": value.total,
             "timestamp": {
-                "minScore": value?.minScore,
-                "maxScore": value?.maxScore,
-            }
+                "minScore": value.minScore,
+                "maxScore": value.maxScore,
+            },
+            posts: [],
         }
-        const listPostsId = value?.itemIds;
+        const listPostsId = value.itemIds;
         listPostsId.forEach((postId) => {
-            const listCommentId = post?.HasComment[postId].itemIds;
+            let listImages = [];
+            const listAttachmentIds = post.HasAttachment[postId].itemIds;
+            listAttachmentIds.forEach((attachmentId) => {
+                let attachment = post.Attachment[attachmentId];
+                let image = {
+                    "userId": attachment.data.userId,
+                    "url": attachment.data.url,
+                    "alt": attachment.data.name,
+                    "mime": attachment.data.mime,
+                    "size": attachment.data.size,
+                    "version": attachment.version,
+                }
+                listImages.push(image);
+            })
+            //
+            const listCommentId = post.HasComment[postId].itemIds;
             let listCommentsData = [];
             listCommentId.forEach((commentId) => {
-                let comment = post?.Comment[commentId];
+                let comment = post.Comment[commentId];
                 let commentData = {
-                    "version": comment?.version,
-                    "href": comment?.href,
+                    "version": comment.version,
+                    "href": comment.href,
                     "username": "ttamta",
-                    "content": comment?.data?.content,
+                    "content": comment.data.content,
                 };
                 listCommentsData.push(commentData);
             })
-            result.posts = [];
+            const reactionCount = post.HasReaction[postId] ? post.HasReaction[postId].itemIds.length : 0;
             const postsTmp = {
-                [postId]:{
+                [postId]: {
                     "comments": listCommentsData,
-                    "caption": post?.Post[postId]?.data?.caption,
-                    "href": post?.Post[postId]?.href,
+                    "caption": post.Post[postId].data.caption,
+                    "href": post.Post[postId].href,
                     "images": listImages,
                     "updateAt": "Feb 2021",
                     "createdAt": "Feb 2020",
-                    "liked": "110k",
+                    "liked": reactionCount,
                 }
             };
             result.posts.push(postsTmp);

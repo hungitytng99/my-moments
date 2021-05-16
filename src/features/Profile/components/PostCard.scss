@@ -4,8 +4,12 @@
     border-radius: 0.5rem;
     overflow: hidden;
     height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &>img {
-        width: 100%;
+        object-fit: contain;
         vertical-align: middle;
         transition: all 0.45s ease 0s;
     }
@@ -40,7 +44,6 @@
         transform: translateY(1rem);
         &>div {
             width: 50%;
-            padding: 0 0.5rem;
         }
         button {
             width: 100%;
@@ -51,14 +54,15 @@
         align-items: center;
         justify-content: flex-end;
         &-icon {
-            padding-right: 10px;
+            padding-right: 8px;
         }
     }
     &__comment {
         display: flex;
         align-items: center;
+        padding-left: 15px;
         &-icon {
-            padding-right: 10px;
+            padding-right: 8px;
         }
     }
     // When hover on photo card
