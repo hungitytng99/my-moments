@@ -1,9 +1,7 @@
 $header-height: 50px;
-
 .header {
     border-bottom: 1px solid var(--grey-11);
     height: $header-height;
-
     &__container {
         width: 100%;
         max-width: var(--content-width);
@@ -11,36 +9,29 @@ $header-height: 50px;
         justify-content: space-between;
         align-items: center;
     }
-
     &-logo__img {
         width: 130px;
     }
-
     &-control {
         &__list {
             list-style: none;
             display: flex;
             justify-content: center;
         }
-
         &__item {
             font-size: 2.2rem;
             margin-right: 20px;
-
             &:hover {
                 cursor: pointer;
-
             }
-
             &:last-child {
                 margin-right: 0px;
             }
         }
     }
-
     &__dropdown {
         position: relative;
-        & label:hover{
+        & label:hover {
             cursor: pointer;
         }
         &-triangle-up {
@@ -55,9 +46,7 @@ $header-height: 50px;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
             z-index: 1;
-
         }
-
         &-hidden {
             content: '';
             position: absolute;
@@ -68,7 +57,6 @@ $header-height: 50px;
             background-color: white;
             z-index: 3;
         }
-
         &-box {
             position: absolute;
             top: 115%;
@@ -79,31 +67,25 @@ $header-height: 50px;
             z-index: 2;
             overflow: hidden;
         }
-
         &-list {
             background-color: white;
             width: 220px;
         }
-
         &-item {
             &-icon {
                 padding: 0px 6px 2px 0px;
             }
-
             &:last-child {
                 border-top: 1px solid var(--grey-11);
             }
-
             &:hover {
                 background-color: var(--grey-12);
             }
-
             &-text.--logout {
                 padding: 8px 0px 8px 10px;
                 text-align: left;
             }
         }
-
         &-link {
             display: flex;
             align-items: center;
@@ -111,6 +93,11 @@ $header-height: 50px;
         }
     }
 }
+
+.dropdown_none {
+    display: none;
+}
+
 .custom-icon-home {
     margin: 2px 0px 0px 7px;
 }

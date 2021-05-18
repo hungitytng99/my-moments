@@ -55,7 +55,6 @@ const listApiUri = {
 const getOwnPostParser = (post) => {
     let result;
     for (const [key, value] of Object.entries(post.HasPost)) {
-        console.log(post, key, value);
         result = {
             "total": value.total,
             "timestamp": {

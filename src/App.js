@@ -3,8 +3,8 @@ import './App.scss';
 import Loading from 'components/Loading/Loading';
 import NotFound from './components/NotFound/NotFound';
 import React, { Suspense } from 'react';
-// import { PublicRoute } from 'PublicRoute';
-// import PrivateRoute from 'PrivateRoute';
+import { PublicRoute } from 'PublicRoute';
+import PrivateRoute from 'PrivateRoute';
 //Lazy loading:
 const LoginPage = React.lazy(() => import('./features/Login'));
 const RegisterPage = React.lazy(() => import('./features/Register'));

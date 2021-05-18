@@ -12,8 +12,6 @@ function PostCard(props) {
   const commentsCount = valuePost.comments.length;
   const likesCount = valuePost.liked;
   let [imageDimension, setImageDimension] = useState(ImageHelper.getDimensions(photo.url));
-  console.log(imageDimension);
-
   useEffect(() => {
     if (imageDimension.width === 0 || imageDimension.height === 0 ) {
       setImageDimension(ImageHelper.getDimensions(photo.url));

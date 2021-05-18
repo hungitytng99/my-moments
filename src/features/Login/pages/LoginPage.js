@@ -38,7 +38,6 @@ function LoginPage(props) {
                     <LoginForm
                         initialValues={initialValues}
                         onSubmit={handleSubmit}
-
                         errorAuthKey={errorAuthKey}
                     />
                 </div>
